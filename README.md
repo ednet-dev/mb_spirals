@@ -21,7 +21,7 @@ Blog:
 http://dzenanr.github.com/
 
 Code:
-https://github.com/dzenanr/mb
+https://github.com/dzenanr/mb_spirals
 
 Summary:
 http://goo.gl/DqF7d
