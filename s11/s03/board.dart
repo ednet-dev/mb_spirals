@@ -18,8 +18,8 @@ class Board {
   CanvasElement canvas;
   CanvasRenderingContext2D context;
 
-  int _width;
-  int _height;
+  num _width;
+  num _height;
 
   List<Box> boxes;
   List<Line> lines;
@@ -53,21 +53,21 @@ class Board {
     new Timer.periodic(const Duration(milliseconds: INTERVAL), (t) => redraw());
   }
 
-  void set width(int width) {
+  void set width(num width) {
     _width = width;
-    canvas.width = width;
+    canvas.width = width.toInt();
   }
 
-  int get width {
+  num get width {
     return _width;
   }
 
-  void set height(int height) {
+  void set height(num height) {
     _height = height;
-    canvas.height = height;
+    canvas.height = height.toInt();
   }
 
-  int get height {
+  num get height {
     return _height;
   }
 
