@@ -1,0 +1,1 @@
+{"width":990,"boxes":[{"entry":false,"name":"Project","x":156,"height":120,"y":349,"width":120,"items":[{"category":"identifier","name":"name","sequence":10,"init":""},{"category":"attribute","name":"description","sequence":20,"init":""}]}],"lines":[],"height":580}

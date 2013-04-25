@@ -1,0 +1,47 @@
+
+Branches
+
+http://snwalkunde.tumblr.com/post/16968571389/git-branching-cheat-sheet
+
+
+Checking out locally a spiral as a tag
+
+git checkout s00
+
+You are in 'detached HEAD' state. You can look around, make experimental changes and
+commit them, and you can discard any commits you make in this state without impacting any branches
+by peforming another checkout.
+
+If you want to create a new branch to retain commits you create, you may do so (now or
+later) by using -b with checkout command again. Example:
+
+  git checkout -b s00a
+
+A new version of a spiral as a branch
+
+  git checkout -b s00a
+
+Makes changes in s00a
+
+  1. change script in MagicBoxes.html
+  2. add // branch s00a in MagicBoxes.dart
+  3. add .gitignore to ignore MagicBoxes.dart.js and *~ (Ubuntu backup files)
+
+  git status
+
+    modified:  MagicBoxes.dart
+    deleted:   MagicBoxes.dart.app.js
+    modified:  MagicBoxes.html
+
+  Untracked files:
+
+    .gitignore
+
+  git rm MagicBoxes.dart.app.js
+  git add .
+  git commit -m "script changes in s00a"
+
+Push local branch to GitHub
+
+  git push origin s00a
+
