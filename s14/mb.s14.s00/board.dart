@@ -18,8 +18,8 @@ class Board {
   CanvasElement canvas;
   CanvasRenderingContext2D context;
 
-  int _width;
-  int _height;
+  num _width;
+  num _height;
 
   List<Box> boxes;
   List<Line> lines;
@@ -54,21 +54,21 @@ class Board {
     new Timer.periodic(const Duration(milliseconds: INTERVAL), (t) => redraw());
   }
 
-  void set width(int width) {
+  void set width(num width) {
     _width = width;
-    canvas.width = width;
+    canvas.width = width.toInt();
   }
 
-  int get width {
+  num get width {
     return _width;
   }
 
-  void set height(int height) {
+  void set height(num height) {
     _height = height;
-    canvas.height = height;
+    canvas.height = height.toInt();
   }
 
-  int get height {
+  num get height {
     return _height;
   }
 
@@ -141,10 +141,10 @@ class Board {
   Box boxFromJson(Map<String, Object> boxMap) {
     String title = boxMap["name"];
     bool entry = boxMap["entry"];
-    int x = boxMap["x"];
-    int y = boxMap["y"];
-    int width = boxMap["width"];
-    int height = boxMap["height"];
+    num x = boxMap["x"];
+    num y = boxMap["y"];
+    num width = boxMap["width"];
+    num height = boxMap["height"];
     Box box = new Box(this, x, y, width, height);
     box.title = title;
     box.entry = entry;
