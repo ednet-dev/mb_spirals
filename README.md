@@ -10,13 +10,15 @@ updated for M1 of Dart on 2012-11-22
 
 updated for M4 of Dart on 2013-04-25
 
-Learning Dart in spirals by developing 
-[Magic Boxes] (https://github.com/dzenanr/magic_boxes).
+updated for Dart beta on 2013-09-15
 
-Teaching Dart by using spirals on learning Dart.
+Learning Dart in spirals by developing 
+[Model Concepts](https://github.com/dzenanr/model_concepts).
+
+Teaching Dart by using [spirals](https://github.com/dzenanr/mb_spirals) on Learning Dart.
 
 Based on:
-https://github.com/dzenanr/magic_boxes
+https://github.com/dzenanr/model_concepts
 
 Blog:
 http://dzenanr.github.com/
@@ -27,5 +29,5 @@ https://github.com/dzenanr/mb_spirals
 Summary:
 http://goo.gl/DqF7d
 
-Each spiral from magic_boxes is explained by several steps in mb_spirals.
+
 
