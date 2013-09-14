@@ -66,7 +66,7 @@ class Box {
   }
 
   void onMouseDown(MouseEvent event) {
-    if (contains(event.offsetX, event.offsetY)) toggleSelection();
+    if (contains(event.offset.x, event.offset.y)) toggleSelection();
     _mouseDown = true;
   }
 
@@ -76,8 +76,8 @@ class Box {
 
   // Change a position of the box with mouse mouvements.
   void onMouseMove(MouseEvent event) {
-    num ex = event.offsetX;
-    num ey = event.offsetY;
+    num ex = event.offset.x;
+    num ey = event.offset.y;
     // if (isSelected() && contains(event.offsetX, event.offsetY) && _mouseDown) {
     if (contains(ex, ey) && isSelected() && _mouseDown
         && board.countSelectedBoxesThatContain(ex, ey) < 2) {
