@@ -40,16 +40,16 @@ class Box {
   }
 
   void onMouseUp(MouseEvent event) {
-    if (contains(event.offsetX, event.offsetY)) selected = !selected;
+    if (contains(event.offset.x, event.offset.y)) selected = !selected;
   }
 
   // Change a position of the box with mouse mouvements.
   void onMouseMove(MouseEvent event) {
-    if (selected && contains(event.offsetX, event.offsetY)) {
-      x = event.offsetX - width / 2;
+    if (selected && contains(event.offset.x, event.offset.y)) {
+      x = event.offset.x - width / 2;
       if (x < 0) x = 1;
       if (x > board.width - width) x = board.width - width - 1;
-      y = event.offsetY - height / 2;
+      y = event.offset.y - height / 2;
       if (y < 0) y = 1;
       if (y > board.height - height) y = board.height - height - 1;
     }

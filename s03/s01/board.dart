@@ -44,10 +44,10 @@ class Board {
   // Create a box in the position of the mouse click on the board,
   // but not on an existing box.
   void onMouseDown(MouseEvent event) {
-    Box box = new Box(this, event.offsetX, event.offsetY, 60, 100);
+    Box box = new Box(this, event.offset.x, event.offset.y, 60, 100);
     bool clickedOnExistingBox = false;
     for (Box box in boxes) {
-      if (box.contains(event.offsetX, event.offsetY)) {
+      if (box.contains(event.offset.x, event.offset.y)) {
         clickedOnExistingBox = true;
         break;
       }
