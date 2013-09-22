@@ -170,7 +170,7 @@ class Board {
   void onMouseDown(MouseEvent e) {
     bool clickedOnBox = false;
     for (Box box in boxes) {
-      if (box.contains(e.offsetX, e.offsetY)) {
+      if (box.contains(e.offset.x, e.offset.y)) {
         clickedOnBox = true;
         break;
       }
@@ -180,12 +180,12 @@ class Board {
       if (toolBar.isSelectToolOn()) {
         deselectBoxes();
       } else if (toolBar.isBoxToolOn()) {
-        Box box = new Box(this, e.offsetX, e.offsetY,
+        Box box = new Box(this, e.offset.x, e.offset.y,
           Box.DEFAULT_WIDTH, Box.DEFAULT_HEIGHT);
-        if (e.offsetX + box.width > width) {
+        if (e.offset.x + box.width > width) {
           box.x = width - box.width - 1;
         }
-        if (e.offsetY + box.height > height) {
+        if (e.offset.y + box.height > height) {
           box.y = height - box.height - 1;
         }
         boxes.add(box);

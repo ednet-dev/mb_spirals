@@ -2,7 +2,7 @@ library mb;
 
 import 'dart:html';
 import 'dart:async';
-import 'dart:json';
+import 'dart:convert';
 
 part 'board.dart';
 part 'box.dart';
