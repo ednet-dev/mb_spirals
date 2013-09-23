@@ -17,7 +17,7 @@ Based on:
 https://github.com/dzenanr/model_concepts
 
 Blog:
-http://dzenanr.github.com/
+http://dzenanr.github.io/
 
 Code:
 https://github.com/dzenanr/mb_spirals
