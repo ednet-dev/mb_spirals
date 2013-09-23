@@ -6,10 +6,6 @@ mb_spirals in Dart
 by Dzenan Ridjanovic
 2012-01-23 -- 2013-09-22
 
-updated for M1 of Dart on 2012-11-22
-
-updated for M4 of Dart on 2013-04-25
-
 updated for Dart beta on 2013-09-22
 
 Learning Dart in spirals by developing 
