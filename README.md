@@ -1,7 +1,3 @@
-On Dart
-https://plus.google.com/u/0/b/113649577593294551754/
-https://plus.google.com/u/0/b/113649577593294551754/113649577593294551754/posts
-
 mb_spirals in Dart
 by Dzenan Ridjanovic
 2012-01-23 -- 2013-11-09
@@ -11,17 +7,19 @@ Learning Dart in spirals by developing
 
 Teaching Dart by using [spirals](https://github.com/dzenanr/mb_spirals) on Learning Dart.
 
-Based on:
-https://github.com/dzenanr/model_concepts
+### More Details
 
-Blog:
-http://dzenanr.github.io/
+[**Summary**](http://goo.gl/DqF7d)
 
-Code:
-https://github.com/dzenanr/mb_spirals
+[**dartling: Domain Model Framework**](http://goo.gl/Fd08zZ)
 
-Summary:
-http://goo.gl/DqF7d
+[*Learning Dart*](http://www.packtpub.com/learning-dart/book) by Dzenan Ridjanovic & Ivo Balbaert
+
+[Blog](http://dzenanr.github.io/)
+
+[On Dart](https://plus.google.com/+OndartMe)
+
+
 
 
 
