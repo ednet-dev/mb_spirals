@@ -43,7 +43,7 @@ class Board {
 
   // Create a box in the position of the mouse click on the board.
   void onMouseDown(MouseEvent event) {
-    Box box = new Box(this, event.offsetX, event.offsetY, 60, 100);
+    Box box = new Box(this, event.offset.x, event.offset.y, 60, 100);
     boxes.add(box);
   }
 

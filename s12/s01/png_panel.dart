@@ -7,7 +7,7 @@ final Board board;
   ButtonElement fromModelToPngButton;
 
   PngPanel(this.board) {
-    fromModelToPngButton = document.query('#fromModelToPng');
+    fromModelToPngButton = document.querySelector('#fromModelToPng');
     fromModelToPngButton.onClick.listen((MouseEvent e) {
       //board.toPng();
       toPng();
@@ -15,7 +15,7 @@ final Board board;
   }
 
   void toPng() {
-    ImageElement modelImage = document.query('#modelImage');
+    ImageElement modelImage = document.querySelector('#modelImage');
     modelImage.src = board.canvas.toDataUrl("image/png");
   }
 

@@ -4,7 +4,7 @@ import 'dart:html';
 
 main() {
   // Get a reference to the canvas.
-  var canvas = document.query('#canvas');
+  var canvas = document.querySelector('#canvas');
   var context = canvas.getContext("2d");
   var width = canvas.width;
   var height = canvas.height;

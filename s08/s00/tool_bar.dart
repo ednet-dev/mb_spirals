@@ -18,9 +18,9 @@ class ToolBar {
   InputElement boxNameInput;
 
   ToolBar(this.board) {
-    selectButton = document.query('#select');
-    boxButton = document.query('#box');
-    lineButton = document.query('#line');
+    selectButton = document.querySelector('#select');
+    boxButton = document.querySelector('#box');
+    lineButton = document.querySelector('#line');
 
     // Tool bar events.
     selectButton.onClick.listen((MouseEvent e) {
@@ -50,7 +50,7 @@ class ToolBar {
     onTool(SELECT);
     _fixedTool = SELECT;
 
-    boxNameInput = document.query('#boxName');
+    boxNameInput = document.querySelector('#boxName');
     boxNameInput.onFocus.listen((Event e) {
       Box box = board.lastBoxSelected;
       if (box != null) {

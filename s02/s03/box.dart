@@ -31,7 +31,7 @@ class Box {
 
   // Change a position of the box with mouse mouvements.
   void onMouseMove(MouseEvent event) {
-    if (isPointInside(event.offsetX, event.offsetY)) {
+    if (isPointInside(event.offset.x, event.offset.y)) {
       x = event.offset.x - width / 2;
       y = event.offset.y - height / 2;
     }

@@ -8,8 +8,8 @@ class JsonPanel {
   ButtonElement fromModelToJsonButton;
 
   JsonPanel(this.board) {
-    modelJsonTextArea = document.query('#modelJson');
-    fromModelToJsonButton = document.query('#fromModelToJson');
+    modelJsonTextArea = document.querySelector('#modelJson');
+    fromModelToJsonButton = document.querySelector('#fromModelToJson');
     fromModelToJsonButton.onClick.listen((MouseEvent e) {
       modelJsonTextArea.value =  board.toJson();
     });

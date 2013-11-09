@@ -16,9 +16,9 @@ class ToolBar {
   ButtonElement lineButton;
 
   ToolBar(this.board) {
-    selectButton = document.query('#select');
-    boxButton = document.query('#box');
-    lineButton = document.query('#line');
+    selectButton = document.querySelector('#select');
+    boxButton = document.querySelector('#box');
+    lineButton = document.querySelector('#line');
 
     // Tool bar events.
     selectButton.onClick.listen((MouseEvent e) {

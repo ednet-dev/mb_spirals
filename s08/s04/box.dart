@@ -34,9 +34,9 @@ class Box {
 
     draw();
     // Box events (actually, canvas events).
-    document.query('#canvas').onMouseDown.listen(onMouseDown);
-    document.query('#canvas').onMouseUp.listen(onMouseUp);
-    document.query('#canvas').onMouseMove.listen(onMouseMove);
+    document.querySelector('#canvas').onMouseDown.listen(onMouseDown);
+    document.querySelector('#canvas').onMouseUp.listen(onMouseUp);
+    document.querySelector('#canvas').onMouseMove.listen(onMouseMove);
   }
 
   void draw() {
@@ -183,7 +183,7 @@ class Box {
       intersectionY = fy.toInt();
     } else {
       y = (y2 < y1 ? y : y + height);
-      x = ((fy - y2) / m).toInt() + x2;
+      x = ((fy - y2) ~/ m) + x2;
     }
     return new Point(intersectionX, intersectionY);
   }

@@ -4,11 +4,9 @@ https://plus.google.com/u/0/b/113649577593294551754/113649577593294551754/posts
 
 mb_spirals in Dart
 by Dzenan Ridjanovic
-2012-01-23 -- 2013-09-22
+2012-01-23 -- 2013-11-09
 
-updated for Dart beta on 2013-09-22
-
-Learning Dart in spirals by developing 
+Learning Dart in spirals by developing
 [Model Concepts](https://github.com/dzenanr/model_concepts).
 
 Teaching Dart by using [spirals](https://github.com/dzenanr/mb_spirals) on Learning Dart.

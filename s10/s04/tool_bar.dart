@@ -47,9 +47,9 @@ class ToolBar {
   InputElement line21NameInput;
 
   ToolBar(this.board) {
-    selectButton = document.query('#select');
-    boxButton = document.query('#box');
-    lineButton = document.query('#line');
+    selectButton = document.querySelector('#select');
+    boxButton = document.querySelector('#box');
+    lineButton = document.querySelector('#line');
 
     // Tool bar events.
     selectButton.onClick.listen((MouseEvent e) {
@@ -79,8 +79,8 @@ class ToolBar {
     onTool(SELECT);
     _fixedTool = SELECT;
 
-    canvasWidthInput = document.query('#canvasWidth');
-    canvasHeightInput = document.query('#canvasHeight');
+    canvasWidthInput = document.querySelector('#canvasWidth');
+    canvasHeightInput = document.querySelector('#canvasHeight');
     canvasWidthInput.valueAsNumber = board.width;
     canvasWidthInput.onInput.listen((Event e) {
       board.width = canvasWidthInput.valueAsNumber;
@@ -90,7 +90,7 @@ class ToolBar {
       board.height = canvasHeightInput.valueAsNumber;
     });
 
-    boxNameInput = document.query('#boxName');
+    boxNameInput = document.querySelector('#boxName');
     boxNameInput.onFocus.listen((Event e) {
       Box box = board.lastBoxSelected;
       if (box != null) {
@@ -108,9 +108,9 @@ class ToolBar {
       }
     });
 
-    itemNameInput = document.query('#itemName');
+    itemNameInput = document.querySelector('#itemName');
 
-    itemOption = document.query('#itemCategory');
+    itemOption = document.querySelector('#itemCategory');
     itemOption.onChange.listen((MouseEvent e) {
       if (currentItem != null) {
         currentItem.name = itemNameInput.value;
@@ -119,9 +119,9 @@ class ToolBar {
       }
     });
 
-    itemSequenceInput = document.query('#itemSequence');
+    itemSequenceInput = document.querySelector('#itemSequence');
 
-    addItemButton = document.query('#addItem');
+    addItemButton = document.querySelector('#addItem');
     addItemButton.onClick.listen((MouseEvent e) {
       Box box = board.lastBoxSelected;
       if (box != null) {
@@ -130,7 +130,7 @@ class ToolBar {
       }
     });
 
-    getItemButton = document.query('#getItem');
+    getItemButton = document.querySelector('#getItem');
     getItemButton.onClick.listen((MouseEvent e) {
       Box box = board.lastBoxSelected;
       if (box != null) {
@@ -148,7 +148,7 @@ class ToolBar {
       }
     });
 
-    setItemButton = document.query('#setItem');
+    setItemButton = document.querySelector('#setItem');
     setItemButton.onClick.listen((MouseEvent e) {
       Box box = board.lastBoxSelected;
       if (box != null) {
@@ -161,7 +161,7 @@ class ToolBar {
       }
     });
 
-    removeItemButton = document.query('#removeItem');
+    removeItemButton = document.querySelector('#removeItem');
     removeItemButton.onClick.listen((MouseEvent e) {
       Box box = board.lastBoxSelected;
       if (box != null) {
@@ -176,7 +176,7 @@ class ToolBar {
       }
     });
 
-    lineOption = document.query('#lineCategory');
+    lineOption = document.querySelector('#lineCategory');
     lineOption.onChange.listen((MouseEvent e) {
       Line line = board.lastLineSelected;
       if (line != null) {
@@ -198,7 +198,7 @@ class ToolBar {
       }
     });
 
-    getLineButton = document.query('#getLine');
+    getLineButton = document.querySelector('#getLine');
     getLineButton.onClick.listen((MouseEvent e) {
       Line line = board.lastLineSelected;
       if (line != null) {
@@ -220,7 +220,7 @@ class ToolBar {
       }
     });
 
-    setLineButton = document.query('#setLine');
+    setLineButton = document.querySelector('#setLine');
     setLineButton.onClick.listen((MouseEvent e) {
       Line line = board.lastLineSelected;
       if (line != null) {
@@ -246,19 +246,19 @@ class ToolBar {
       }
     });
 
-    line12Box1Label = document.query('#line12Box1');
-    line12Box2Label = document.query('#line12Box2');
-    line12MinInput = document.query('#line12Min');
-    line12MaxInput = document.query('#line12Max');
-    line12IdCheckbox = document.query('#line12Id');
-    line12NameInput = document.query('#line12Name');
+    line12Box1Label = document.querySelector('#line12Box1');
+    line12Box2Label = document.querySelector('#line12Box2');
+    line12MinInput = document.querySelector('#line12Min');
+    line12MaxInput = document.querySelector('#line12Max');
+    line12IdCheckbox = document.querySelector('#line12Id');
+    line12NameInput = document.querySelector('#line12Name');
 
-    line21Box2Label = document.query('#line21Box2');
-    line21Box1Label = document.query('#line21Box1');
-    line21MinInput = document.query('#line21Min');
-    line21MaxInput = document.query('#line21Max');
-    line21IdCheckbox = document.query('#line21Id');
-    line21NameInput = document.query('#line21Name');
+    line21Box2Label = document.querySelector('#line21Box2');
+    line21Box1Label = document.querySelector('#line21Box1');
+    line21MinInput = document.querySelector('#line21Min');
+    line21MaxInput = document.querySelector('#line21Max');
+    line21IdCheckbox = document.querySelector('#line21Id');
+    line21NameInput = document.querySelector('#line21Name');
   }
 
   onTool(int tool) {

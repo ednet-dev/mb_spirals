@@ -32,27 +32,27 @@ class MenuBar {
   ButtonElement createBoxesAsTilesButton;
 
   MenuBar(this.board) {
-    saveAsPngButton = document.query('#save-as-png');
+    saveAsPngButton = document.querySelector('#save-as-png');
 
-    deleteSelectionButton = document.query('#delete-selection');
+    deleteSelectionButton = document.querySelector('#delete-selection');
 
-    selectAllButton = document.query('#select-all');
-    selectBoxesButton = document.query('#select-boxes');
-    selectLinesButton = document.query('#select-lines');
-    selectBoxLinesButton = document.query('#select-box-lines');
-    selectLinesBetweenBoxesButton = document.query('#select-lines-between-boxes');
+    selectAllButton = document.querySelector('#select-all');
+    selectBoxesButton = document.querySelector('#select-boxes');
+    selectLinesButton = document.querySelector('#select-lines');
+    selectBoxLinesButton = document.querySelector('#select-box-lines');
+    selectLinesBetweenBoxesButton = document.querySelector('#select-lines-between-boxes');
 
-    increaseSelectionHeightButton = document.query('#increase-selection-height');
-    decreaseSelectionHeightButton = document.query('#decrease-selection-height');
-    increaseSelectionWidthButton = document.query('#increase-selection-width');
-    decreaseSelectionWidthButton = document.query('#decrease-selection-width');
-    increaseSelectionSizeButton = document.query('#increase-selection-size');
-    decreaseSelectionSizeButton = document.query('#decrease-selection-size');
-    hideSelectionButton = document.query('#hide-selection');
-    showHiddenSelectionButton = document.query('#show-hidden-selection');
+    increaseSelectionHeightButton = document.querySelector('#increase-selection-height');
+    decreaseSelectionHeightButton = document.querySelector('#decrease-selection-height');
+    increaseSelectionWidthButton = document.querySelector('#increase-selection-width');
+    decreaseSelectionWidthButton = document.querySelector('#decrease-selection-width');
+    increaseSelectionSizeButton = document.querySelector('#increase-selection-size');
+    decreaseSelectionSizeButton = document.querySelector('#decrease-selection-size');
+    hideSelectionButton = document.querySelector('#hide-selection');
+    showHiddenSelectionButton = document.querySelector('#show-hidden-selection');
 
-    createBoxesInDiagonalButton = document.query('#create-boxes-in-diagonal');
-    createBoxesAsTilesButton = document.query('#create-boxes-as-tiles');
+    createBoxesInDiagonalButton = document.querySelector('#create-boxes-in-diagonal');
+    createBoxesAsTilesButton = document.querySelector('#create-boxes-as-tiles');
 
     // Menu bar events.
     saveAsPngButton.onClick.listen((MouseEvent e) {

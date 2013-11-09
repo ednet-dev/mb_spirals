@@ -29,9 +29,9 @@ class Box {
     titleNo = board.nextBoxNo;
     draw();
     // Box events (actually, canvas events).
-    document.query('#canvas').onMouseDown.listen(onMouseDown);
-    document.query('#canvas').onMouseUp.listen(onMouseUp);
-    document.query('#canvas').onMouseMove.listen(onMouseMove);
+    document.querySelector('#canvas').onMouseDown.listen(onMouseDown);
+    document.querySelector('#canvas').onMouseUp.listen(onMouseUp);
+    document.querySelector('#canvas').onMouseMove.listen(onMouseMove);
   }
 
   void draw() {
@@ -88,7 +88,7 @@ class Box {
   // Change a position of the box with mouse mouvements.
   void onMouseMove(MouseEvent e) {
     if (contains(e.offset.x, e.offset.y) && isSelected() && _mouseDown &&
-        board.countSelectedBoxesContain(e.offsetX, e.offsetY) < 2) {
+        board.countSelectedBoxesContain(e.offset.x, e.offset.y) < 2) {
       x =  e.offset.x - width / 2;
       if (x < 0) {
         x = 1;

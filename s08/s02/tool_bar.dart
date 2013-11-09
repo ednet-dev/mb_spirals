@@ -25,9 +25,9 @@ class ToolBar {
   Item currentItem;
 
   ToolBar(this.board) {
-    selectButton = document.query('#select');
-    boxButton = document.query('#box');
-    lineButton = document.query('#line');
+    selectButton = document.querySelector('#select');
+    boxButton = document.querySelector('#box');
+    lineButton = document.querySelector('#line');
 
     // Tool bar events.
     selectButton.onClick.listen((MouseEvent e) {
@@ -57,7 +57,7 @@ class ToolBar {
     onTool(SELECT);
     _fixedTool = SELECT;
 
-    boxNameInput = document.query('#boxName');
+    boxNameInput = document.querySelector('#boxName');
     boxNameInput.onFocus.listen((Event e) {
       Box box = board.lastBoxSelected;
       if (box != null) {
@@ -71,9 +71,9 @@ class ToolBar {
       }
     });
 
-    itemNameInput = document.query('#itemName');
+    itemNameInput = document.querySelector('#itemName');
 
-    addItemButton = document.query('#addItem');
+    addItemButton = document.querySelector('#addItem');
     addItemButton.onClick.listen((MouseEvent e) {
       Box box = board.lastBoxSelected;
       if (box != null) {
@@ -82,7 +82,7 @@ class ToolBar {
       }
     });
 
-    getItemButton = document.query('#getItem');
+    getItemButton = document.querySelector('#getItem');
     getItemButton.onClick.listen((MouseEvent e) {
       Box box = board.lastBoxSelected;
       if (box != null) {
@@ -97,7 +97,7 @@ class ToolBar {
       }
     });
 
-    setItemButton = document.query('#setItem');
+    setItemButton = document.querySelector('#setItem');
     setItemButton.onClick.listen((MouseEvent e) {
       Box box = board.lastBoxSelected;
       if (box != null) {
@@ -108,7 +108,7 @@ class ToolBar {
       }
     });
 
-    removeItemButton = document.query('#removeItem');
+    removeItemButton = document.querySelector('#removeItem');
     removeItemButton.onClick.listen((MouseEvent e) {
       Box box = board.lastBoxSelected;
       if (box != null) {

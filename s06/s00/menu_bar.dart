@@ -8,8 +8,8 @@ class MenuBar {
   ButtonElement deleteBoxesButton;
 
   MenuBar(this.board) {
-    createBoxesButton = document.query('#create-boxes');
-    deleteBoxesButton = document.query('#delete-boxes');
+    createBoxesButton = document.querySelector('#create-boxes');
+    deleteBoxesButton = document.querySelector('#delete-boxes');
 
     // Menu bar events.
     createBoxesButton.onClick.listen((MouseEvent e) {

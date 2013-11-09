@@ -17,14 +17,14 @@ class MenuBar {
   ButtonElement createBoxesAsTilesButton;
 
   MenuBar(this.board) {
-    selectAllButton = document.query('#select-all');
-    deleteSelectionButton = document.query('#delete-selection');
+    selectAllButton = document.querySelector('#select-all');
+    deleteSelectionButton = document.querySelector('#delete-selection');
 
-    hideSelectionButton = document.query('#hide-selection');
-    showHiddenSelectionButton = document.query('#show-hidden-selection');
+    hideSelectionButton = document.querySelector('#hide-selection');
+    showHiddenSelectionButton = document.querySelector('#show-hidden-selection');
 
-    createBoxesInDiagonalButton = document.query('#create-boxes-in-diagonal');
-    createBoxesAsTilesButton = document.query('#create-boxes-as-tiles');
+    createBoxesInDiagonalButton = document.querySelector('#create-boxes-in-diagonal');
+    createBoxesAsTilesButton = document.querySelector('#create-boxes-as-tiles');
 
     // Menu bar events.
     selectAllButton.onClick.listen((MouseEvent e) {

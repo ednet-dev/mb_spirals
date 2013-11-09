@@ -11,8 +11,8 @@ class ToolBar {
   bool _boxToolDblClicked = false;
 
   ToolBar(this.board) {
-    ButtonElement selectButton = document.query('#select');
-    ButtonElement boxButton = document.query('#box');
+    ButtonElement selectButton = document.querySelector('#select');
+    ButtonElement boxButton = document.querySelector('#box');
 
     // Tool bar events.
     selectButton.onClick.listen((MouseEvent e) {

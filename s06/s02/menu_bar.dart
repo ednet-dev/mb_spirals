@@ -10,10 +10,10 @@ class MenuBar {
   ButtonElement showHiddenBoxesButton;
 
   MenuBar(this.board) {
-    selectBoxesButton = document.query('#select-boxes');
-    deleteSelectedBoxesButton = document.query('#delete-selected-boxes');
-    hideSelectedBoxesButton = document.query('#hide-selected-boxes');
-    showHiddenBoxesButton = document.query('#show-hidden-boxes');
+    selectBoxesButton = document.querySelector('#select-boxes');
+    deleteSelectedBoxesButton = document.querySelector('#delete-selected-boxes');
+    hideSelectedBoxesButton = document.querySelector('#hide-selected-boxes');
+    showHiddenBoxesButton = document.querySelector('#show-hidden-boxes');
 
     // Menu bar events.
     selectBoxesButton.onClick.listen((MouseEvent e) {

@@ -34,32 +34,32 @@ class MenuBar {
   ButtonElement createBoxesAsTilesButton;
 
   MenuBar(this.board) {
-    openModelButton = document.query('#open-model');
-    saveModelButton = document.query('#save-model');
+    openModelButton = document.querySelector('#open-model');
+    saveModelButton = document.querySelector('#save-model');
 
-    deleteSelectionButton = document.query('#delete-selection');
+    deleteSelectionButton = document.querySelector('#delete-selection');
 
-    selectAllButton = document.query('#select-all');
-    selectBoxesButton = document.query('#select-boxes');
-    selectLinesButton = document.query('#select-lines');
-    selectBoxLinesButton = document.query('#select-box-lines');
+    selectAllButton = document.querySelector('#select-all');
+    selectBoxesButton = document.querySelector('#select-boxes');
+    selectLinesButton = document.querySelector('#select-lines');
+    selectBoxLinesButton = document.querySelector('#select-box-lines');
     selectLinesBetweenBoxesButton =
-      document.query('#select-lines-between-boxes');
+      document.querySelector('#select-lines-between-boxes');
 
     increaseSelectionHeightButton =
-      document.query('#increase-selection-height');
+      document.querySelector('#increase-selection-height');
     decreaseSelectionHeightButton =
-      document.query('#decrease-selection-height');
-    increaseSelectionWidthButton = document.query('#increase-selection-width');
-    decreaseSelectionWidthButton = document.query('#decrease-selection-width');
-    increaseSelectionSizeButton = document.query('#increase-selection-size');
-    decreaseSelectionSizeButton = document.query('#decrease-selection-size');
-    hideSelectionButton = document.query('#hide-selection');
-    hideNonSelectionButton = document.query('#hide-non-selection');
-    showHiddenButton = document.query('#show-hidden');
+      document.querySelector('#decrease-selection-height');
+    increaseSelectionWidthButton = document.querySelector('#increase-selection-width');
+    decreaseSelectionWidthButton = document.querySelector('#decrease-selection-width');
+    increaseSelectionSizeButton = document.querySelector('#increase-selection-size');
+    decreaseSelectionSizeButton = document.querySelector('#decrease-selection-size');
+    hideSelectionButton = document.querySelector('#hide-selection');
+    hideNonSelectionButton = document.querySelector('#hide-non-selection');
+    showHiddenButton = document.querySelector('#show-hidden');
 
-    createBoxesInDiagonalButton = document.query('#create-boxes-in-diagonal');
-    createBoxesAsTilesButton = document.query('#create-boxes-as-tiles');
+    createBoxesInDiagonalButton = document.querySelector('#create-boxes-in-diagonal');
+    createBoxesAsTilesButton = document.querySelector('#create-boxes-as-tiles');
 
     // Menu bar events.
     openModelButton.onClick.listen((MouseEvent e) {

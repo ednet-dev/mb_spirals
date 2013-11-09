@@ -23,6 +23,6 @@ void displayBord(CanvasElement canvas) {
 
 void main() {
   // Get a reference to the canvas.
-  CanvasElement canvas = document.query('#canvas');
+  CanvasElement canvas = document.querySelector('#canvas');
   displayBord(canvas);
 }

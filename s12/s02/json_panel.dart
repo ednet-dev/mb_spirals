@@ -9,12 +9,12 @@ class JsonPanel {
   ButtonElement fromJsonToModelButton;
 
   JsonPanel(this.board) {
-    modelJsonTextArea = document.query('#modelJson');
-    fromModelToJsonButton = document.query('#fromModelToJson');
+    modelJsonTextArea = document.querySelector('#modelJson');
+    fromModelToJsonButton = document.querySelector('#fromModelToJson');
     fromModelToJsonButton.onClick.listen((MouseEvent e) {
       modelJsonTextArea.value = board.toJson();
     });
-    fromJsonToModelButton = document.query('#fromJsonToModel');
+    fromJsonToModelButton = document.querySelector('#fromJsonToModel');
     fromJsonToModelButton.onClick.listen((MouseEvent e) {
       board.fromJson(modelJsonTextArea.value);
     });

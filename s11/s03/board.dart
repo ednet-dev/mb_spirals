@@ -48,7 +48,7 @@ class Board {
     toolBar = new ToolBar(this);
 
     // Canvas event.
-    document.query('#canvas').onMouseDown.listen(onMouseDown);
+    document.querySelector('#canvas').onMouseDown.listen(onMouseDown);
     // Redraw every INTERVAL ms.
     new Timer.periodic(const Duration(milliseconds: INTERVAL), (t) => redraw());
   }
@@ -101,7 +101,7 @@ class Board {
   }
 
   void saveAsPng() {
-    ImageElement modelImage = document.query('#modelImage');
+    ImageElement modelImage = document.querySelector('#modelImage');
     modelImage.src = canvas.toDataUrl("image/png");
   }
 
