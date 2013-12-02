@@ -111,7 +111,7 @@ class ToolBar {
     itemNameInput = document.querySelector('#itemName');
 
     itemOption = document.querySelector('#itemCategory');
-    itemOption.onChange.listen((MouseEvent e) {
+    itemOption.onChange.listen((Event e) {
       if (currentItem != null) {
         currentItem.name = itemNameInput.value;
         currentItem.category = itemOption.value;
@@ -186,7 +186,7 @@ class ToolBar {
     });
 
     lineOption = document.querySelector('#lineCategory');
-    lineOption.onChange.listen((MouseEvent e) {
+    lineOption.onChange.listen((Event e) {
       Line line = board.lastLineSelected;
       if (line != null) {
         line.category = lineOption.value;

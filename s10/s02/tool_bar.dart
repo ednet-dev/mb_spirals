@@ -110,7 +110,7 @@ class ToolBar {
     itemNameInput = document.querySelector('#itemName');
 
     itemOption = document.querySelector('#itemCategory');
-    itemOption.onChange.listen((MouseEvent e) {
+    itemOption.onChange.listen((Event e) {
       if (currentItem != null) {
         currentItem.name = itemNameInput.value;
         currentItem.category = itemOption.value;
