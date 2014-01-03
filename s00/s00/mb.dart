@@ -2,9 +2,9 @@ import 'dart:html';
 
 // s00.s00
 
-class mb {
+class Mb {
 
-  mb() {
+  Mb() {
   }
 
   void run() {
@@ -18,5 +18,5 @@ class mb {
 }
 
 void main() {
-  new mb().run();
+  new Mb().run();
 }
