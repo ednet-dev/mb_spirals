@@ -2,16 +2,16 @@ part of mb;
 
 class Board {
 
-  static final int MIN_WIDTH = 990;
-  static final int MIN_HEIGHT = 580;
-  static final int DEFAULT_LINE_WIDTH = 1;
-  static final String DEFAULT_LINE_COLOR = '#000000'; // black
-  static final String SOFT_LINE_COLOR = '#999493'; // gray; old: 736f6e
-  // static final String SOFT_LINE_COLOR = '#c0c0c0 '; // silver
-  static final String DEFAULT_FONT_SIZE = '12';
+  static const int MIN_WIDTH = 990;
+  static const int MIN_HEIGHT = 580;
+  static const int DEFAULT_LINE_WIDTH = 1;
+  static const String DEFAULT_LINE_COLOR = '#000000'; // black
+  static const String SOFT_LINE_COLOR = '#999493'; // gray; old: 736f6e
+  // static const String SOFT_LINE_COLOR = '#c0c0c0 '; // silver
+  static const String DEFAULT_FONT_SIZE = '12';
 
   // The acceptable delta error in pixels for clicking on a line between two boxes.
-  static final int DELTA = 8;
+  static const int DELTA = 8;
   // The board is redrawn every INTERVAL ms.
   static const int INTERVAL = 8;
 

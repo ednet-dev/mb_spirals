@@ -3,7 +3,7 @@ part of mb;
 class Board {
 
   // The delta error in pixels for clicking on a line between two boxes.
-  static final int DELTA = 8;
+  static const int DELTA = 8;
   // The board is redrawn every INTERVAL ms.
   static const int INTERVAL = 8;
 

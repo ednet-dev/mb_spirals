@@ -2,11 +2,11 @@ part of mb;
 
 class Board {
 
-  static final int MIN_WIDTH = 990;
-  static final int MIN_HEIGHT = 580;
+  static const int MIN_WIDTH = 990;
+  static const int MIN_HEIGHT = 580;
 
   // The acceptable delta error in pixels for clicking on a line between two boxes.
-  static final int DELTA = 8;
+  static const int DELTA = 8;
   // The board is redrawn every INTERVAL ms.
   static const int INTERVAL = 8;
 
