@@ -2,7 +2,7 @@ part of mb;
 
 class Box {
 
-  static final SSS = 6; // selection square size
+  static const int SSS = 6; // selection square size
 
   final Board board;
 

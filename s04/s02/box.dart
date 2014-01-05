@@ -2,10 +2,10 @@ part of mb;
 
 class Box {
 
-  static final SSS = 6; // selection square size
-  static final TBH = 20; // title box height
-  static final TOS = 4; // text offset size
-  static final IOS = TBH - TOS; // item offset size
+  static const int SSS = 6; // selection square size
+  static const int TBH = 20; // title box height
+  static const int TOS = 4; // text offset size
+  static const int IOS = TBH - TOS; // item offset size
 
   final Board board;
 

@@ -2,8 +2,8 @@ part of mb;
 
 class Box {
 
-  static final num DEFAULT_WIDTH = 100;
-  static final num DEFAULT_HEIGHT = 100;
+  static const int DEFAULT_WIDTH = 100;
+  static final int DEFAULT_HEIGHT = 100;
 
   static final SSS = 6; // selection square size
   static final TBH = 20; // title box height
