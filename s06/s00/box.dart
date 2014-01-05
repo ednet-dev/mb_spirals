@@ -2,13 +2,13 @@ part of mb;
 
 class Box {
 
-  static final num DEFAULT_WIDTH = 100;
-  static final num DEFAULT_HEIGHT = 100;
+  static const int DEFAULT_WIDTH = 100;
+  static const int DEFAULT_HEIGHT = 100;
 
-  static final num SSS = 6; // selection square size
-  static final num TBH = 20; // title box height
-  static final num TOS = 4; // text offset size
-  static final num IOS = TBH - TOS; // item offset size
+  static const int SSS = 6; // selection square size
+  static const int TBH = 20; // title box height
+  static const int TOS = 4; // text offset size
+  static const int IOS = TBH - TOS; // item offset size
 
   final Board board;
 

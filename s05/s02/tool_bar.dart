@@ -2,8 +2,8 @@ part of mb;
 
 class ToolBar {
 
-  static final int SELECT = 1;
-  static final int BOX = 2;
+  static const int SELECT = 1;
+  static const int BOX = 2;
 
   final Board board;
 
