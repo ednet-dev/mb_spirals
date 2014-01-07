@@ -21,7 +21,7 @@ class MenuBar {
   ButtonElement hideSelectionButton;
   ButtonElement showHiddenSelectionButton;
 
-  // Creaete
+  // Create
   ButtonElement createBoxesInDiagonalButton;
   ButtonElement createBoxesAsTilesButton;
 
