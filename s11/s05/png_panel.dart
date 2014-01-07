@@ -2,7 +2,7 @@ part of mb;
 
 class PngPanel {
 
-final Board board;
+  final Board board;
 
   ButtonElement fromModelToPngButton;
 
