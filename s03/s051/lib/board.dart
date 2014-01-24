@@ -5,7 +5,7 @@ class Board {
   num height;
   CanvasElement canvas;
   CanvasRenderingContext2D context;
-  List<Box> boxes = new List();
+  var boxes = new List<Box>();
 
   Board(this.canvas) {
     context = canvas.getContext("2d");
@@ -13,8 +13,8 @@ class Board {
     height = canvas.height;
     border();
     canvas.onMouseDown.listen((MouseEvent event) {
-      Box box = new Box(this, event.offset.x, event.offset.y, 60, 100);
-      bool clickedOnExistingBox = false;
+      var box = new Box(this, event.offset.x, event.offset.y, 60, 100);
+      var clickedOnExistingBox = false;
       for (Box box in boxes) {
         if (box.contains(event.offset.x, event.offset.y)) {
           clickedOnExistingBox = true;
