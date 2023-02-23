@@ -4,5 +4,5 @@ homepage: http://ondart.me/
 version: 0.1.0
 description: >
   A graphical model designer for dartling.
-dependencies:
-  browser: any
+environment:
+  sdk: '>=2.18.6 <3.0.0'
