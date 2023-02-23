@@ -13,7 +13,7 @@ Teaching Dart by using [spirals](https://github.com/dzenanr/mb_spirals) on Learn
 
 [**Old Summary**](http://goo.gl/DqF7d)
 
-[**dartling: Domain Model Framework**](http://goo.gl/Fd08zZ)
+[**ednet_core: Domain Model Framework**](http://goo.gl/Fd08zZ)
 
 [*Learning Dart*](http://learningdart.org/)
 
