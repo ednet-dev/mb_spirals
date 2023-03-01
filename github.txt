@@ -35,7 +35,7 @@ http://code.google.com/p/magic-boxes/
 Global setup:
  Set up git
   git config --global user.name "Dzenan Ridjanovic"
-  git config --global user.email dzenanr@gmail.com
+  git config --global user.email user@ednet.one
       
 Next steps:
   mkdir mb_spirals 
@@ -55,7 +55,7 @@ Clone a remote repository into a local repository.
 
 cd git/dart/learn
 Read only:
-git clone git://github.com/dzenanr/mb_spirals.git
+git clone git://github.com/ednet-dev/mb_spirals.git
 Read+Write:
 git clone git@github.com:dzenanr/mb_spirals.git
 
@@ -231,7 +231,7 @@ github.user is your user name from GitHub
 cd dart
 ls
 Read only:
-git clone git://github.com/dzenanr/mb_spirals.git
+git clone git://github.com/ednet-dev/mb_spirals.git
 Read+Write:
 git clone git@github.com:dzenanr/mb_spirals.git
 

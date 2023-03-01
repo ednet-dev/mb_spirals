@@ -3,9 +3,9 @@ by Dzenan Ridjanovic
 2012-01-23 -- 2014-01-20
 
 Learning Dart in spirals by developing
-[Model Concepts](https://github.com/dzenanr/model_concepts).
+[Model Concepts](https://github.com/ednet-dev/model_concepts).
 
-Teaching Dart by using [spirals](https://github.com/dzenanr/mb_spirals) on Learning Dart.
+Teaching Dart by using [spirals](https://github.com/ednet-dev/mb_spirals) on Learning Dart.
 
 ### More Details
 
